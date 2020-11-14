@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="Delivery de comidas gourmet para preparar en pocos minutos. Ingredientes frescos y de excelente calidad. Opciones que se adaptan a cualquier dieta y paladar. Envíos en CABA y GBA.">
+	<meta name="keywords" content="comidas, comida a domicilio, delivery, menu, comida saludable, gourmet, cocinar, facil y rica, comida saludable">
+	<!-- CSS only -->
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+	<!-- JS, Popper.js, and jQuery -->
+	<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+	<link rel="stylesheet" type="text/css" href="estilos.css">
+	<link href="https://fonts.googleapis.com/css2?family=PT+Sans+Narrow&display=swap" rel="stylesheet">
+	<title>HomeRestó | Servicio de comida a domicilio</title>
+</head>
+
+<body>
+
+	<div class="container-fluid sticky-top sectionWhite p-0"> <!--MENÚ DE NAVEGACIÓN-->
+		<nav class="navbar navbar-expand-lg px-1 px-sm-3 py-0">
+			<a class="navbar-brand" href="index.html">
+				<img src="Imagenes/logo_dkt.png" class="navbarLogo" alt="Logo HomeRestó">
+			</a>
+			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+			<div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+				<div class="navbar-nav text-right">
+					<a class="nav-item nav-link" href="como-funciona.html">Cómo funciona</a>
+					<a class="nav-item nav-link" href="planes.html">Planes</a>
+					<a class="nav-item nav-link" href="menu.html">Menú</a>
+					<a class="nav-item nav-link" href="nosotros.html">Nosotros</a>
+					<a class="nav-item nav-link" href="regala.html">Regalá</a>
+				</div>
+			</div>
+			<div class="d-none d-xl-block mr-4">
+				<form class="form-inline">
+					<input class="form-control navbar__searchInput" type="search" placeholder="Buscar..." aria-label="Search">
+					<button type="button" class="btn navbar__searchInput" data-toggle="button" aria-pressed="false">
+						<img src="Imagenes/search.png" class="navbar__searchBtn" alt="Buscar">
+					</button>
+				</form>
+			</div>
+			<div class="d-none d-lg-block">
+				<a class="btn shadow-sm secBtn mr-2" href="#" role="button">Ingresá</a>
+				<a class="btn shadow-sm mainBtn" href="#" role="button">Registrate</a>
+			</div>
+		</nav>
+	</div>
+
+	<div class="container-fluid" id="heroIndex"> <!--SECCIÓN 1: HERO-->
+		<div class="container sectionWhite px-2 px-sm-5 py-5">
+			<div class="row">
+				<div class="col-12">
+					<h2 class="titleGrey">Comenzá a simplificar tus comidas</h2>
+				</div>
+			</div><br>
+			<div class="row">
+				<div class="col-12">
+					<form action="#" method="post" class="needs-validation">
+						<div class="form-group">
+							<label for="email">E-mail</label><br>
+							<input type="email" class="form-control hero__formInput" id="email" required>
+						</div><br>
+						<div class="form-group">
+							<label for="zip-code">Código postal</label><br>
+							<input type="text" class="form-control hero__formInput" id="zip-code" required>
+							<a href="#" data-toggle="tooltip" data-placement="right" title="Te pedimos el código postal para verificar que nuestro servicio de entregas llegue a tu domicilio.">
+								<img src="Imagenes/question.png" alt="Tooltip">
+							</a>
+						</div><br>
+						<div class="form-group">
+							<button type="submit" class="btn shadow mainBtn">Comenzar</button>
+						</div>
+						<div class="form-group">
+							<small class="form-text text-muted">Si ya tenés una cuenta, hacé click <a class="link" href="#">acá</a>.<br>Al continuar, estás aceptando nuestros <a class="link" href="#">Términos y Condiciones</a>.</small>
+						</div>
+					</form>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="container-fluid sectionGrey py-5" id="servicio"> <!--SECCIÓN 2: NUESTRO SERVICIO-->
+		<div class="row">
+			<div class="col-12">
+				<h2 class="titleGrey mb-4">Nuestro servicio</h2>
+			</div>	
+		</div>
+		<div class="row row-cols-1 row-cols-md-4">
+			<div class="col px-4">
+				<img src="Imagenes/elegir.gif" class="img-fluid" alt="Ícono 'Elegí'">
+				<h4>Elegí las comidas</h4>
+				<p class="d-md-none d-lg-block">+75 opciones caseras y ricas. Customizalas para que se adapten mejor a tu dieta.</p>
+			</div>
+			<div class="col px-4">
+				<img src="Imagenes/delivery.gif" class="img-fluid" alt="Ícono 'Envío'">
+				<h4>Recibilas en tu casa</h4>
+				<p class="d-md-none d-lg-block">Nuestros chefs preparan los platos y vos los recibís frescos y sin moverte de tu casa.</p>
+			</div>
+			<div class="col px-4">
+				<img src="Imagenes/cocinar.gif" class="img-fluid" alt="Ícono 'Cociná'">
+				<h4>Calentalas y disfrutá</h4>
+				<p class="d-md-none d-lg-block">Les das el toque final y en pocos minutos tenés la comida resuelta.</p>
+			</div>
+			<div class="col px-4">
+				<img src="Imagenes/repetir.gif" class="img-fluid" alt="Ícono 'Repetí'">
+				<h4>Volvé a pedir</h4>
+				<p class="d-md-none d-lg-block">Gestioná tu plan: volvé a pedir lo que quieras cuando quieras.</p>
+			</div>
+		</div>
+	</div>
+
+		<div class="container-fluid py-5"> <!--SECCIÓN 3: MUCHO MÁS QUE UNA COMIDA A DOMICILIO-->
+		<div class="row">
+			<div class="col-12">
+				<h2 class="titleOrange mb-5">Mucho más que una comida a domicilio</h2>
+			</div>		
+		</div>
+		<div class="row muchoMas--left">
+			<div class="col-12 col-sm-6 col-md-4 col-lg-3 containerImage">
+				<img src="Imagenes/comida_1.jpg" class="img-fluid rounded float-left mb-3 mb-sm-0" alt="Plato 1">
+			</div>
+			<div class="col-12 col-sm-6 col-xl-4">
+				<h4>Personalizá tus comidas</h4>
+				<p><span>Hacé que cada plato sea único y exclusivo para vos. </span>Elegí la cantidad de porciones, agregá o quitá ingredientes, o modificá la proteína en comidas seleccionadas.<span> Tené el control de lo que comés.</span></p>
+				<a class="btn mainBtn shadow-sm" href="#" role="button">Saber más</a>
+			</div>
+		</div><br class="d-none d-sm-block"><br><br>
+		<div class="row muchoMas--right">
+			<div class="col-12 containerImage2 d-sm-none">
+				<img src="Imagenes/comida_2.jpg" class="img-fluid rounded float-right mb-3" alt="Plato 2">
+			</div>
+			<div class="col-12 col-sm-6 col-xl-4">
+				<h4>Elegí tu manera de comprar</h4>
+				<p>Tenemos tres planes diferentes para que elijas el que mejor se adapte a tu dieta y a tu rutina.<span> Cambiá o cancelá tu plan cuando quieras de forma rápida y sencilla.</span></p>
+				<a class="btn mainBtn shadow-sm" href="planes.html" role="button">Ver planes</a>
+			</div>
+			<div class="col-sm-6 col-md-4 col-lg-3 containerImage">
+				<img src="Imagenes/comida_2.jpg" class="img-fluid rounded float-right mb-3" alt="Plato 2">
+			</div>
+		</div><br class="d-none d-sm-block"><br><br>
+		<div class="row muchoMas--left">
+			<div class="col-12 col-sm-6 col-md-4 col-lg-3 containerImage">
+				<img src="Imagenes/comida_3.jpg" class="img-fluid rounded float-left mb-3 mb-sm-0" alt="Plato 3">
+			</div>
+			<div class="col-12 col-sm-6 col-xl-4">
+				<h4>Sé un chef en tu propia casa</h4>
+				<p><span>Prepará y disfrutá platos creados por nuestros chefs. </span>No necesitás ser un experto en la cocina ni dedicarle mucho tiempo para deleitar tu paladar con comidas gourmet exquisitas.</p>
+				<a class="btn shadow-sm mainBtn" href="#" role="button">Saber más</a>
+			</div>
+		</div>
+	</div>
+
+	<div class="container-fluid py-5" id="menuIndex"> <!--SECCIÓN 4: QUÉ TENEMOS EN EL MENÚ-->
+		<div class="container sectionWhite px-5 py-5">
+			<div class="row pb-4">
+				<div class="col-12">
+					<h2 class="titleGrey">Qué tenemos en el menú</h2>
+					<div class="d-flex justify-content-center">
+						<p>Quiero comidas
+							<div class="dropdown">
+								<button type="button" class="btn dropdown-toggle" data-toggle="dropdown">veggies</button>
+								<div class="dropdown-menu">
+									<a class="dropdown-item" href="#">gluten free</a>
+									<a class="dropdown-item" href="#">keto</a>
+									<a class="dropdown-item" href="#">low-cal</a>
+								</div>
+							</div>
+						</p>
+					</div>
+				</div>
+			</div>
+			<div class="row row-cols-1 row-cols-md-2 row-cols-lg-3">
+				<div class="col d-sm-none d-md-block mb-4">
+					<div class="card shadow">
+						<img src="Imagenes/facil_2.jpg" class="card-img-top img-fluid" alt="Morrones rellenos">
+						<div class="card-body">
+							<h5 class="card-title">Morrones rellenos</h5>
+							<p class="card-text">con ricota, vegetales y queso</p>
+						</div>
+					</div>
+				</div>
+				<div class="col d-sm-none d-md-block mb-4">
+					<div class="card shadow">
+						<img src="Imagenes/facil_6.jpg" class="card-img-top img-fluid" alt="Arroz primavera">
+						<div class="card-body">
+							<h5 class="card-title">Arroz primavera</h5>
+							<p class="card-text">con porotos negros y calabaza</p>
+						</div>
+					</div>
+				</div>
+				<div class="col mb-4">
+					<div class="card shadow">
+						<img src="Imagenes/elegidos_4.jpg" class="card-img-top img-fluid" alt="Sopa de alcaucil">
+						<div class="card-body">
+							<h5 class="card-title">Sopa de alcaucil</h5>
+							<p class="card-text">con morrones y alcaparras</p>
+						</div>
+					</div>
+				</div>
+				<div class="col mb-4">
+					<div class="card shadow">
+						<img src="Imagenes/facil_4.jpg" class="card-img-top img-fluid" alt="Pasta con champignones">
+						<div class="card-body">
+							<h5 class="card-title">Pasta liviana</h5>
+							<p class="card-text">con champignones y tomate</p>
+						</div>
+					</div>
+				</div>
+				<div class="col mb-4">
+					<div class="card shadow">
+						<img src="Imagenes/platoindex_2.jpg" class="card-img-top img-fluid" alt="Pizza vegetariana">
+						<div class="card-body">
+							<h5 class="card-title">Pizza vegetariana</h5>
+							<p class="card-text">con queso de cabra y rúcula</p>
+						</div>
+					</div>
+				</div>
+				<div class="col d-sm-none d-md-block mb-4">
+					<div class="card shadow">
+						<img src="Imagenes/facil_5.jpg" class="card-img-top img-fluid" alt="Ensalada con pomelo">
+						<div class="card-body">
+							<h5 class="card-title">Ensalada verde con pomelo</h5>
+							<p class="card-text">acompañada con aderezo de semillas</p>
+						</div>
+					</div>
+				</div>
+			</div><br>
+			<div class="row pb-4">
+				<div class="col-12 d-flex justify-content-center">
+						<a class="btn shadow largeMainBtn" href="menu.html" role="button">Ver menú completo</a>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="container-fluid p-5" id="experiencia"> <!--SECCIÓN 5: COMPARTÍ TU EXPERIENCIA HOMERESTÓ-->
+		<div class="row pb-1">
+			<div class="col-12">
+				<h2 class="titleOrange"><span>Compartí tu </span>experiencia HomeRestó</h2>
+			</div>
+		</div>
+		<div class="row pb-2">
+			<div class="col-12 d-flex justify-content-center">
+				<img src="Imagenes/instagram_color.png" class="img-fluid" id="experienciaIcon">
+				<p>#chefadomicilio</p>
+			</div>
+		</div>
+		<div class="container p-0" id="fotosExperiencia">
+			<img src="Imagenes/exp_1.jpg" class="img-fluid" alt="Experiencia 1">
+			<img src="Imagenes/exp_2.jpg" class="img-fluid" alt="Experiencia 2">
+			<img src="Imagenes/exp_3.jpg" class="img-fluid" alt="Experiencia 3">
+			<img src="Imagenes/exp_6.jpg" class="img-fluid" alt="Experiencia 6">			
+		</div>
+	</div>
+
+	<footer class="container-fluid text-center sectionGrey d-block d-sm-none d-lg-block px-0 py-3"> <!--FOOTER-->
+		<div class="row">
+			<div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-5 mb-sm-0" id="divLogoFooter">
+				<a href="index.html">
+					<img src="Imagenes/logo_footer.png" class="footer__logo" alt="Logo HomeRestó">
+				</a>
+			</div>
+			<div class="col-12 col-md-4 col-lg-3 d-sm-none d-md-block mb-5 mb-md-0">
+				<h6>Conocé más</h6>
+				<a href="planes.html">Planes</a><br>
+				<a href="menu.html">Menú</a><br>
+				<a href="#">Chefs HomeRestó</a><br>
+				<a href="como-funciona.html#Envíos & Pagos">Medios de pago</a><br>
+				<a href="como-funciona.html#Envíos & Pagos">Envíos</a><br>
+				<a href="regala.html">Regalá HomeRestó</a><br>
+				<a href="#">Preguntas frecuentes</a><br>
+			</div>
+			<div class="col-12 col-md-4 col-lg-3 d-sm-none d-md-block mb-5 mb-md-0">
+				<h6>HomeRestó</h6>
+				<a href="nosotros.html">Nosotros</a><br>
+				<a href="#">Contacto</a><br>
+				<a href="#">Sumate a nuestro equipo</a><br>
+				<a href="#">Prensa</a><br>
+				<a href="#">Términos y Condiciones</a><br>
+			</div>
+			<div class="col-12 col-sm-6 col-lg-3 d-md-none d-lg-block mb-sm-0">
+				<h6>Seguinos en</h6>
+				<a href="https://www.facebook.com/">
+					<img src="Imagenes/facebook.png" class="footer__icon" alt="Ícono Facebook">
+				</a>
+				<a href="https://www.instagram.com/">
+					<img src="Imagenes/instagram.png" class="footer__icon" alt="Ícono Instagram">
+				</a>
+				<a href="https://twitter.com/">
+					<img src="Imagenes/twitter.png" class="footer__icon" alt="Ícono Twitter">
+				</a>
+				<a href="https://ar.pinterest.com/">
+					<img src="Imagenes/pinterest.png" class="footer__icon" alt="Ícono Pinterest">
+				</a>
+				<a href="https://www.youtube.com/">
+					<img src="Imagenes/youtube.png" class="footer__icon" alt="Ícono Youtube">
+				</a><br><br>
+				<h6>Descargá la app</h6>
+				<a href="#">
+					<img src="Imagenes/android.png" class="footer__icon" alt="Ícono Android">
+				</a>
+				<a href="#">
+					<img src="Imagenes/apple.png" class="footer__icon" alt="Ícono Apple">
+				</a>
+			</div>
+		</div>
+	</footer>
+
+	<footer class="container-fluid text-center sectionGrey px-0 py-3" id="smallFooter">
+		<img src="Imagenes/logo_footer.png" class="footer__logo" alt="Logo HomeRestó">
+		<div>
+			<h6>Seguinos en</h6>
+			<a href="https://www.facebook.com/">
+				<img src="Imagenes/facebook.png" class="footer__icon" alt="Ícono Facebook">
+			</a>
+			<a href="https://www.instagram.com/">
+				<img src="Imagenes/instagram.png" class="footer__icon" alt="Ícono Instagram">
+			</a>
+			<a href="https://twitter.com/">
+				<img src="Imagenes/twitter.png" class="footer__icon" alt="Ícono Twitter">
+			</a>
+			<a href="https://ar.pinterest.com/">
+				<img src="Imagenes/pinterest.png" class="footer__icon" alt="Ícono Pinterest">
+			</a>
+			<a href="https://www.youtube.com/">
+				<img src="Imagenes/youtube.png" class="footer__icon" alt="Ícono Youtube">
+			</a><br><br>
+			<h6>Descargá la app</h6>
+			<a href="#">
+				<img src="Imagenes/android.png" class="footer__icon" alt="Ícono Android">
+			</a>
+			<a href="#">
+				<img src="Imagenes/apple.png" class="footer__icon" alt="Ícono Apple">
+			</a>
+		</div>
+	</footer>
+
+	<script>
+		$(document).ready(function(){
+			$('[data-toggle="tooltip"]').tooltip();
+		});
+	</script>
+
+</body>
+</html>

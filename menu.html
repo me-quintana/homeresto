@@ -1,0 +1,501 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="Más de 75 platos diferentes para elegir cada semana. Opciones personalizadas para que cada comida sea única y exclusiva para vos. Platos listos en pocos minutos. Desde $250 por porción.">
+	<meta name="keywords" content="menu, comidas, comidas gourmet, comidas saludables, facil y rica, vegetariano, sin gluten">
+	<!-- CSS only -->
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+	<!-- JS, Popper.js, and jQuery -->
+	<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+	<link rel="stylesheet" type="text/css" href="estilos.css">
+	<link href="https://fonts.googleapis.com/css2?family=PT+Sans+Narrow&display=swap" rel="stylesheet">
+	<title>HomeRestó | Menú</title>
+</head>
+
+<body>
+
+	<div class="container-fluid sticky-top sectionWhite p-0"> <!--MENÚ DE NAVEGACIÓN-->
+		<nav class="navbar navbar-expand-lg px-1 px-sm-3 py-0">
+			<a class="navbar-brand" href="index.html">
+				<img src="Imagenes/logo_dkt.png" class="navbarLogo" alt="Logo HomeRestó">
+			</a>
+			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+			<div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+				<div class="navbar-nav text-right">
+					<a class="nav-item nav-link" href="como-funciona.html">Cómo funciona</a>
+					<a class="nav-item nav-link" href="planes.html">Planes</a>
+					<a class="nav-item nav-link" href="menu.html">Menú</a>
+					<a class="nav-item nav-link" href="nosotros.html">Nosotros</a>
+					<a class="nav-item nav-link" href="regala.html">Regalá</a>
+				</div>
+			</div>
+			<div class="d-none d-xl-block mr-4">
+				<form class="form-inline">
+					<input class="form-control navbar__searchInput" type="search" placeholder="Buscar..." aria-label="Search">
+					<button type="button" class="btn navbar__searchInput" data-toggle="button" aria-pressed="false">
+						<img src="Imagenes/search.png" class="navbar__searchBtn" alt="Buscar">
+					</button>
+				</form>
+			</div>
+			<div class="d-none d-lg-block">
+				<a class="btn shadow-sm secBtn mr-2" href="#" role="button">Ingresá</a>
+				<a class="btn shadow-sm mainBtn" href="#" role="button">Registrate</a>
+			</div>
+		</nav>
+	</div>
+
+	<div class="container" id="carrouselFecha"> <!--SECCIÓN 1: MENÚ-->
+		<div id="carouselExampleControls" class="carousel slide" data-ride="carousel" data-interval="false">
+			<div class="carousel-inner">
+				<div class="carousel-item active">
+					<h2>S<span>emana del 09 de noviembre</span></h2>
+				</div>
+				<div class="carousel-item">
+					<h2>S<span>emana del 16 de noviembre</span></h2>
+				</div>
+				<div class="carousel-item">
+					<h2>S<span>emana del 23 de noviembre</span></h2>
+				</div>
+			</div>
+			<a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+				<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+				<span class="sr-only">Previous</span>
+			</a>
+			<a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+    			<span class="carousel-control-next-icon" aria-hidden="true"></span>
+    			<span class="sr-only">Next</span>
+  			</a>
+		</div>
+    	<p id="menu__subtitlte">Comidas a partir de $250 por porción</p>
+	</div>
+
+	<div class="container p-3 mt-5 mb-5"> <!--DROPDOWNS-->
+		<div class="row">
+			<div class="col-12" id="menuDropdown">
+				<div class="dropdown show">
+					<a class="btn dropdown-toggle filters" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Categoría</a>
+					<div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+						<a class="dropdown-item" href="#">Entradas</a>
+						<a class="dropdown-item" href="#">Ensaladas</a>
+						<a class="dropdown-item" href="#">Especialidades del chef</a>
+						<a class="dropdown-item" href="#">Minutas</a>
+						<a class="dropdown-item" href="#">Postres</a>
+					</div>
+				</div>
+				<div class="dropdown show">
+					<a class="btn dropdown-toggle filters" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Tipo de dieta</a>
+					<div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+						<a class="dropdown-item" href="#">Gluten free</a>
+						<a class="dropdown-item" href="#">Low cal</a>
+						<a class="dropdown-item" href="#">Low carb / keto</a>
+						<a class="dropdown-item" href="#">Veggie</a>
+					</div>
+				</div>
+				<div class="dropdown show">
+					<a class="btn dropdown-toggle filters" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Ingredientes</a>
+					<div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+						<a class="dropdown-item" href="#">Carne</a>
+						<a class="dropdown-item" href="#">Cerdo</a>
+						<a class="dropdown-item" href="#">Cordero</a>
+						<a class="dropdown-item" href="#">Pescado</a>
+						<a class="dropdown-item" href="#">Pollo</a>
+						<a class="dropdown-item" href="#">Soja</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="container-fluid cardsMenu px-sm-5">
+		<div class="row mb-4">
+			<div class="col-lg-12">
+				<h3>Los más elegidos</h3> <!--LOS MÁS ELEGIDOS-->
+			</div>
+		</div>
+		<div class="row row-cols-1 row-cols-sm-2 row-cols-lg-3">
+			<div class="col mb-4">
+				<div class="card shadow">
+					<img src="Imagenes/elegidos_1.jpg" class="card-img-top img-fluid" alt="Bondiola con papines">
+					<div class="card-body">
+						<h5 class="card-title">Bondiola de cerdo</h5>
+						<p class="card-text">con papines al romero y ensalada</p>
+						<p class="card-text menu__text">30 - 45 min | </p>
+						<img src="Imagenes/cerdo.png" class="menu__icon">
+						<img src="Imagenes/gluten.png" class="menu__icon">
+						<img src="Imagenes/lacteo.png" class="menu__icon">
+						<p class="card-text menu__text"><span class="d-block d-sm-none d-md-block"> | </span></p>
+						<a class="link" href="#">Customización</a>
+					</div>
+					<div class="card-footer">
+						<button type="button" class="btn shadow-sm mainBtn">Seleccionar</button>
+					</div>
+				</div>
+			</div>
+			<div class="col mb-4">
+				<div class="card shadow">
+					<img src="Imagenes/elegidos_3.jpg" class="card-img-top img-fluid" alt="Estofado de carne">
+					<div class="card-body">
+						<h5 class="card-title">Estofado de carne</h5>
+						<p class="card-text">con bizcocho cheddar</p>
+						<p class="card-text menu__text">15 - 30 min | </p>
+						<img src="Imagenes/vaca.png" class="menu__icon">
+						<p class="card-text menu__text"><span class="d-block d-sm-none d-md-block"> | </span></p>
+						<a class="link" href="#">Customización</a>
+					</div>
+					<div class="card-footer">
+						<button type="button" class="btn shadow-sm mainBtn">Seleccionar</button>
+					</div>
+				</div>
+			</div>
+			<div class="col d-none d-md-block mb-4">
+				<div class="card shadow">
+					<img src="Imagenes/elegidos_2.jpg" class="card-img-top img-fluid" alt="Cordero con puré">
+					<div class="card-body">
+						<h5 class="card-title">Pata de cordero al vino blanco</h5>
+						<p class="card-text">con puré de papa</p>
+						<p class="card-text menu__text">30 - 45 min | </p>
+						<img src="Imagenes/cordero.png" class="menu__icon">
+						<p class="card-text menu__text"><span class="d-block d-sm-none d-md-block"> | </span></p>
+						<a class="link" href="#">Customización</a>
+					</div>
+					<div class="card-footer">
+						<button type="button" class="btn shadow-sm mainBtn">Seleccionar</button>
+					</div>
+				</div>
+			</div>
+			<div class="col mb-4">
+				<div class="card shadow">
+					<img src="Imagenes/elegidos_4.jpg" class="card-img-top img-fluid" alt="Sopa de alcaucil">
+					<div class="card-body">
+						<h5 class="card-title">Sopa de alcaucil</h5>
+						<p class="card-text">con morrones y alcaparras</p>
+						<p class="card-text menu__text">15 - 30 min | </p>
+						<img src="Imagenes/veg.png" class="menu__icon">
+						<img src="Imagenes/gluten.png" class="menu__icon">
+						<p class="card-text menu__text"><span class="d-block d-sm-none d-md-block"> | </span></p>
+						<a class="link" href="#">Customización</a>
+					</div>
+					<div class="card-footer">
+						<button type="button" class="btn shadow-sm mainBtn">Seleccionar</button>
+					</div>
+				</div>
+			</div>
+			<div class="col mb-4">
+				<div class="card shadow">
+					<img src="Imagenes/elegidos_5.jpg" class="card-img-top img-fluid" alt="Brochette de pollo">
+					<div class="card-body">
+						<h5 class="card-title">Brochette de pollo</h5>
+						<p class="card-text">con papas fritas y ensalada</p>
+						<p class="card-text menu__text">15 - 30 min | </p>
+						<img src="Imagenes/pollo.png" class="menu__icon">
+						<img src="Imagenes/gluten.png" class="menu__icon">
+						<img src="Imagenes/lacteo.png" class="menu__icon">
+						<p class="card-text menu__text"><span class="d-block d-sm-none d-md-block"> | </span></p>
+						<a class="link" href="#">Customización</a>
+					</div>
+					<div class="card-footer">
+						<button type="button" class="btn shadow-sm mainBtn">Seleccionar</button>
+					</div>
+				</div>
+			</div>
+			<div class="col d-none d-md-block mb-4">
+				<div class="card shadow">
+					<img src="Imagenes/elegidos_6.jpg" class="card-img-top img-fluid" alt="Guiso de lentejas">
+					<div class="card-body">
+						<h5 class="card-title">Guiso de lentejas</h5>
+						<p class="card-text">con carne y chorizo colorado</p>
+						<p class="card-text menu__text">30 - 45 min | </p>
+						<img src="Imagenes/vaca.png" class="menu__icon">
+						<img src="Imagenes/cerdo.png" class="menu__icon">
+						<p class="card-text menu__text"><span class="d-block d-sm-none d-md-block"> | </span></p>
+						<a class="link" href="#">Customización</a>
+					</div>
+					<div class="card-footer">
+						<button type="button" class="btn shadow-sm mainBtn">Seleccionar</button>
+					</div>
+				</div>
+			</div>						
+		</div>
+	</div>
+
+	<div class="container-fluid cardsMenu px-sm-5">
+		<div class="row mt-5 mb-4">
+			<div class="col-lg-12">
+				<h3>Cocina fácil</h3> <!--COCINA FÁCIL-->
+			</div>
+		</div>
+		<div class="row row-cols-1 row-cols-sm-2 row-cols-lg-3">
+			<div class="col d-none d-md-block mb-4">
+				<div class="card shadow">
+					<img src="Imagenes/facil_1.jpg" class="card-img-top img-fluid" alt="Tacos tex-mex">
+					<div class="card-body">
+						<h5 class="card-title">Tacos tex-mex</h5>
+						<p class="card-text">con guacamole, cream cheese y pico de gallo</p>
+						<p class="card-text menu__text">15 - 30 min | </p>
+						<img src="Imagenes/vaca.png" class="menu__icon">
+						<p class="card-text menu__text"><span class="d-block d-sm-none d-md-block"> | </span></p>
+						<a class="link" href="#">Customización</a>
+					</div>
+					<div class="card-footer">
+						<button type="button" class="btn shadow-sm mainBtn">Seleccionar</button>
+					</div>
+				</div>
+			</div>
+			<div class="col d-none d-md-block mb-4">
+				<div class="card shadow">
+					<img src="Imagenes/facil_5.jpg" class="card-img-top img-fluid" alt="Ensalada con pomelo">
+					<div class="card-body">
+						<h5 class="card-title">Ensalada verde con pomelo</h5>
+						<p class="card-text">acompañada con aderezo de semillas</p>
+						<p class="card-text menu__text">15 - 30 min | </p>
+						<img src="Imagenes/veg.png" class="menu__icon">
+						<img src="Imagenes/lacteo.png" class="menu__icon">
+						<p class="card-text menu__text"><span class="d-block d-sm-none d-md-block"> | </span></p>
+						<a class="link" href="#">Customización</a>
+					</div>
+					<div class="card-footer">
+						<button type="button" class="btn shadow-sm mainBtn">Seleccionar</button>
+					</div>
+				</div>
+			</div>
+			<div class="col mb-4">
+				<div class="card shadow">
+					<img src="Imagenes/facil_3.jpg" class="card-img-top img-fluid" alt="Hamburguesa BBQ">
+					<div class="card-body">
+						<h5 class="card-title">Hamburguesa BBQ</h5>
+						<p class="card-text">acompañada con papas cuña</p>
+						<p class="card-text menu__text">15 - 30 min | </p>
+						<img src="Imagenes/vaca.png" class="menu__icon">
+						<p class="card-text menu__text"><span class="d-block d-sm-none d-md-block"> | </span></p>
+						<a class="link" href="#">Customización</a>
+					</div>
+					<div class="card-footer">
+						<button type="button" class="btn shadow-sm mainBtn">Seleccionar</button>
+					</div>
+				</div>
+			</div>
+			<div class="col mb-4">
+				<div class="card shadow">
+					<img src="Imagenes/facil_4.jpg" class="card-img-top img-fluid" alt="Pasta con champignones">
+					<div class="card-body">
+						<h5 class="card-title">Pasta liviana</h5>
+						<p class="card-text">con champignones y tomate</p>
+						<p class="card-text menu__text">15 - 30 min | </p>
+						<img src="Imagenes/veg.png" class="menu__icon">
+						<img src="Imagenes/lacteo.png" class="menu__icon">
+						<p class="card-text menu__text"><span class="d-block d-sm-none d-md-block"> | </span></p>
+						<a class="link" href="#">Customización</a>
+					</div>
+					<div class="card-footer">
+						<button type="button" class="btn shadow-sm mainBtn">Seleccionar</button>
+					</div>
+				</div>
+			</div>
+			<div class="col mb-4">
+				<div class="card shadow">
+					<img src="Imagenes/facil_2.jpg" class="card-img-top img-fluid" alt="Morrones rellenos">
+					<div class="card-body">
+						<h5 class="card-title">Morrones rellenos</h5>
+						<p class="card-text">con ricota, vegetales y queso</p>
+						<p class="card-text menu__text">15 - 30 min | </p>
+						<img src="Imagenes/veg.png" class="menu__icon">
+						<img src="Imagenes/gluten.png" class="menu__icon">
+						<p class="card-text menu__text"><span class="d-block d-sm-none d-md-block"> | </span></p>
+						<a class="link" href="#">Customización</a>
+					</div>
+					<div class="card-footer">
+						<button type="button" class="btn shadow-sm mainBtn">Seleccionar</button>
+					</div>
+				</div>
+			</div>
+			<div class="col mb-4">
+				<div class="card shadow">
+					<img src="Imagenes/facil_6.jpg" class="card-img-top img-fluid" alt="Arroz primavera">
+					<div class="card-body">
+						<h5 class="card-title">Arroz primavera</h5>
+						<p class="card-text">con porotos negros y calabaza</p>
+						<p class="card-text menu__text">15 - 30 min | </p>
+						<img src="Imagenes/veg.png" class="menu__icon">
+						<img src="Imagenes/gluten.png" class="menu__icon">
+						<img src="Imagenes/lacteo.png" class="menu__icon">
+						<p class="card-text menu__text"><span class="d-block d-sm-none d-md-block"> | </span></p>
+						<a class="link" href="#">Customización</a>
+					</div>
+					<div class="card-footer">
+						<button type="button" class="btn shadow-sm mainBtn">Seleccionar</button>
+					</div>
+				</div>
+			</div>						
+		</div>
+	</div>
+
+	<div class="container-fluid cardsMenu px-sm-5">
+		<div class="row mt-5 mb-4">
+			<div class="col-lg-12">
+				<h3>Momento dulce</h3> <!--MOMENTO DULCE-->
+			</div>
+		</div>
+		<div class="row row-cols-1 row-cols-sm-2 row-cols-lg-3">
+			<div class="col mb-4">
+				<div class="card shadow">
+					<img src="Imagenes/postre_1.jpg" class="card-img-top img-fluid" alt="Torta de chocolate">
+					<div class="card-body">
+						<h5 class="card-title">Torta de chocolate</h5>
+						<p class="card-text">rellena de DDL y crema con frutos rojos</p>
+						<p class="card-text menu__text">15 - 30 min | </p>
+						<img src="Imagenes/veg.png" class="menu__icon">
+						<p class="card-text menu__text"><span class="d-block d-sm-none d-md-block"> | </span></p>
+						<a class="link" href="#">Customización</a>
+					</div>
+					<div class="card-footer">
+						<button type="button" class="btn shadow-sm mainBtn">Seleccionar</button>
+					</div>
+				</div>
+			</div>
+			<div class="col mb-4">
+				<div class="card shadow">
+					<img src="Imagenes/postre_2.jpg" class="card-img-top img-fluid" alt="Macarons">
+					<div class="card-body">
+						<h5 class="card-title">Macarons multicolores</h5>
+						<p class="card-text">con rellenos a elección</p>
+						<p class="card-text menu__text">15 - 30 min | </p>
+						<img src="Imagenes/veg.png" class="menu__icon">
+						<img src="Imagenes/gluten.png" class="menu__icon">
+						<p class="card-text menu__text"><span class="d-block d-sm-none d-md-block"> | </span></p>
+						<a class="link" href="#">Customización</a>
+					</div>
+					<div class="card-footer">
+						<button type="button" class="btn shadow-sm mainBtn">Seleccionar</button>
+					</div>
+				</div>
+			</div>
+			<div class="col mb-4">
+				<div class="card shadow">
+					<img src="Imagenes/postre_3.jpg" class="card-img-top img-fluid" alt="Tarta de frutas">
+					<div class="card-body">
+						<h5 class="card-title">Tarta de frutas</h5>
+						<p class="card-text">con crema pastelera</p>
+						<p class="card-text menu__text">15 - 30 min | </p>
+						<img src="Imagenes/veg.png" class="menu__icon">
+						<p class="card-text menu__text"><span class="d-block d-sm-none d-md-block"> | </span></p>
+						<a class="link" href="#">Customización</a>
+					</div>
+					<div class="card-footer">
+						<button type="button" class="btn shadow-sm mainBtn">Seleccionar</button>
+					</div>
+				</div>
+			</div>
+			<div class="col d-none d-sm-block d-lg-none mb-4">
+				<div class="card shadow">
+					<img src="Imagenes/postre_4.jpg" class="card-img-top img-fluid" alt="Tiramisú">
+					<div class="card-body">
+						<h5 class="card-title">Tiramisú</h5>
+						<p class="card-text">con chocolate y canela</p>
+						<p class="card-text menu__text">15 - 30 min | </p>
+						<img src="Imagenes/veg.png" class="menu__icon">
+						<p class="card-text menu__text"><span class="d-block d-sm-none d-md-block"> | </span></p>
+						<a class="link" href="#">Customización</a>
+					</div>
+					<div class="card-footer">
+						<button type="button" class="btn shadow-sm mainBtn">Seleccionar</button>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="container pt-3 pb-5 py-sm-5" id="faqs"> <!--SECCIÓN 2: FAQs-->
+		<p>¿Tenés alguna consulta?</p>
+		<a href="#">Visitá nuestras preguntas frecuentes</a>
+	</div>
+
+	<footer class="container-fluid text-center sectionGrey d-block d-sm-none d-lg-block px-0 py-3"> <!--FOOTER-->
+		<div class="row">
+			<div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-5 mb-sm-0" id="divLogoFooter">
+				<a href="index.html">
+					<img src="Imagenes/logo_footer.png" class="footer__logo" alt="Logo HomeRestó">
+				</a>
+			</div>
+			<div class="col-12 col-md-4 col-lg-3 d-sm-none d-md-block mb-5 mb-md-0">
+				<h6>Conocé más</h6>
+				<a href="planes.html">Planes</a><br>
+				<a href="menu.html">Menú</a><br>
+				<a href="#">Chefs HomeRestó</a><br>
+				<a href="como-funciona.html#Envíos & Pagos">Medios de pago</a><br>
+				<a href="como-funciona.html#Envíos & Pagos">Envíos</a><br>
+				<a href="regala.html">Regalá HomeRestó</a><br>
+				<a href="#">Preguntas frecuentes</a><br>
+			</div>
+			<div class="col-12 col-md-4 col-lg-3 d-sm-none d-md-block mb-5 mb-md-0">
+				<h6>HomeRestó</h6>
+				<a href="nosotros.html">Nosotros</a><br>
+				<a href="#">Contacto</a><br>
+				<a href="#">Sumate a nuestro equipo</a><br>
+				<a href="#">Prensa</a><br>
+				<a href="#">Términos y Condiciones</a><br>
+			</div>
+			<div class="col-12 col-sm-6 col-lg-3 d-md-none d-lg-block mb-sm-0">
+				<h6>Seguinos en</h6>
+				<a href="https://www.facebook.com/">
+					<img src="Imagenes/facebook.png" class="footer__icon" alt="Ícono Facebook">
+				</a>
+				<a href="https://www.instagram.com/">
+					<img src="Imagenes/instagram.png" class="footer__icon" alt="Ícono Instagram">
+				</a>
+				<a href="https://twitter.com/">
+					<img src="Imagenes/twitter.png" class="footer__icon" alt="Ícono Twitter">
+				</a>
+				<a href="https://ar.pinterest.com/">
+					<img src="Imagenes/pinterest.png" class="footer__icon" alt="Ícono Pinterest">
+				</a>
+				<a href="https://www.youtube.com/">
+					<img src="Imagenes/youtube.png" class="footer__icon" alt="Ícono Youtube">
+				</a><br><br>
+				<h6>Descargá la app</h6>
+				<a href="#">
+					<img src="Imagenes/android.png" class="footer__icon" alt="Ícono Android">
+				</a>
+				<a href="#">
+					<img src="Imagenes/apple.png" class="footer__icon" alt="Ícono Apple">
+				</a>
+			</div>
+		</div>
+	</footer>
+
+	<footer class="container-fluid text-center sectionGrey px-0 py-3" id="smallFooter">
+		<img src="Imagenes/logo_footer.png" class="footer__logo" alt="Logo HomeRestó">
+		<div>
+			<h6>Seguinos en</h6>
+			<a href="https://www.facebook.com/">
+				<img src="Imagenes/facebook.png" class="footer__icon" alt="Ícono Facebook">
+			</a>
+			<a href="https://www.instagram.com/">
+				<img src="Imagenes/instagram.png" class="footer__icon" alt="Ícono Instagram">
+			</a>
+			<a href="https://twitter.com/">
+				<img src="Imagenes/twitter.png" class="footer__icon" alt="Ícono Twitter">
+			</a>
+			<a href="https://ar.pinterest.com/">
+				<img src="Imagenes/pinterest.png" class="footer__icon" alt="Ícono Pinterest">
+			</a>
+			<a href="https://www.youtube.com/">
+				<img src="Imagenes/youtube.png" class="footer__icon" alt="Ícono Youtube">
+			</a><br><br>
+			<h6>Descargá la app</h6>
+			<a href="#">
+				<img src="Imagenes/android.png" class="footer__icon" alt="Ícono Android">
+			</a>
+			<a href="#">
+				<img src="Imagenes/apple.png" class="footer__icon" alt="Ícono Apple">
+			</a>
+		</div>
+	</footer>
+
+</body>
+</html>

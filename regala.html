@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="HomeRestó es el regalo perfecto. Se adapta a cualquier estilo de vida y nivel de habilidad culinaria. Elegí el monto a regalar, personalizá el mensaje y enviá la gift card. Envíos en CABA y GBA.">
+	<meta name="keywords" content="regalar, regalo, regalos originales, regalo a domicilio, regalar experiencias, gift card, tarjeta de regalo, comidas, comida a domicilio, delivery, cocinar">
+	<!-- CSS only -->
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+	<!-- JS, Popper.js, and jQuery -->
+	<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+	<link rel="stylesheet" type="text/css" href="estilos.css">
+	<link href="https://fonts.googleapis.com/css2?family=PT+Sans+Narrow&display=swap" rel="stylesheet">
+	<title>HomeRestó | Regalá</title>
+</head>
+
+<body>
+
+	<div class="container-fluid sticky-top sectionWhite p-0"> <!--MENÚ DE NAVEGACIÓN-->
+		<nav class="navbar navbar-expand-lg px-1 px-sm-3 py-0">
+			<a class="navbar-brand" href="index.html">
+				<img src="Imagenes/logo_dkt.png" class="navbarLogo" alt="Logo HomeRestó">
+			</a>
+			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+			<div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+				<div class="navbar-nav text-right">
+					<a class="nav-item nav-link" href="como-funciona.html">Cómo funciona</a>
+					<a class="nav-item nav-link" href="planes.html">Planes</a>
+					<a class="nav-item nav-link" href="menu.html">Menú</a>
+					<a class="nav-item nav-link" href="nosotros.html">Nosotros</a>
+					<a class="nav-item nav-link" href="regala.html">Regalá</a>
+				</div>
+			</div>
+			<div class="d-none d-xl-block mr-4">
+				<form class="form-inline">
+					<input class="form-control navbar__searchInput" type="search" placeholder="Buscar..." aria-label="Search">
+					<button type="button" class="btn navbar__searchInput" data-toggle="button" aria-pressed="false">
+						<img src="Imagenes/search.png" class="navbar__searchBtn" alt="Buscar">
+					</button>
+				</form>
+			</div>
+			<div class="d-none d-lg-block">
+				<a class="btn shadow-sm secBtn mr-2" href="#" role="button">Ingresá</a>
+				<a class="btn shadow-sm mainBtn" href="#" role="button">Registrate</a>
+			</div>
+		</nav>
+	</div>
+
+	<div class="container-fluid" id="heroRegala"> <!--SECCIÓN 1: HERO-->
+		<div class="row">
+			<div class="col px-0">
+				<h1 class="titleWhite">Regalá HomeRestó,<br>regalá felicidad</h1>	
+			</div>
+		</div>
+	</div>
+
+	<div class="container-fluid px-0 pr-md-3 py-5"> <!--SECCIÓN 2: FORM GIFT CARD-->
+		<div class="row">
+			<div class="col-md-6 text-center d-none d-sm-block" id="giftCard">
+				<img src="Imagenes/gift_card.gif" class="img-fluid" alt="Gift card">
+			</div>
+			<div class="col-md-6">
+				<form action="#" method="post" class="needs-validation" id="formRegala">
+					<h5>1. Elegí el monto a regalar</h5>
+					<div class="form-check">
+						<input class="form-check-input" type="radio" name="exampleRadios" id="value1" value="option1" checked>
+						<label class="form-check-label" for="value1">$1.000</label>
+					</div>
+					<div class="form-check">
+						<input class="form-check-input" type="radio" name="exampleRadios" id="value2" value="option2">
+						<label class="form-check-label" for="value2">$2.000</label>
+					</div>
+					<div class="form-check">
+						<input class="form-check-input" type="radio" name="exampleRadios" id="value3" value="option3">
+						<label class="form-check-label" for="value3">$3.000</label>
+					</div>
+					<div class="form-check">
+						<input class="form-check-input" type="radio" name="exampleRadios" id="value4" value="option4">
+						<label class="form-check-label" for="value4">$4.000</label>
+					</div>
+					<div class="form-check">
+						<input class="form-check-input" type="radio" name="exampleRadios" id="value5" value="option5">
+						<label class="form-check-label" for="value5">$5.000</label>
+					</div><br>
+					<h5>2. Completá tus datos</h5>
+					<div class="form-group">
+						<label for="name">Nombre</label>
+						<input type="text" class="form-control" id="name" required>
+					</div>
+					<div class="form-group">
+						<label for="email">E-mail</label>
+						<input type="email" class="form-control" id="email" required>
+					</div><br>
+					<h5>3. Completá los datos del destinatario</h5>
+					<div class="form-group">
+						<label for="name-addressee">Nombre</label>
+						<input type="text" class="form-control" id="name-addressee" required>
+					</div>
+					<div class="form-group">
+						<label for="email-addressee">E-mail</label>
+						<input type="email" class="form-control" id="email-addressee" required>
+					</div><br>
+					<h5>4. Escribí un mensaje</h5>
+					<div class="form-group">
+						<textarea class="form-control" id="message" rows="5" required></textarea>
+						<small id="clarification" class="form-text text-muted">Máx. 500 caracteres</small>
+					</div>
+					<div class="form-check">
+						<input class="form-check-input" type="checkbox" value="" id="defaultCheck1" required>
+						<label class="form-check-label" for="defaultCheck1">Acepto los <a class="link" href="#">Términos y Condiciones</a>.</label>
+					</div><br>
+					<div class="form-group">
+						<button type="submit" class="btn shadow-sm largeMainBtn mr-2 mb-2 mb-sm-0 mb-md-2">Enviar gift card</button>
+						<button type="reset" class="btn shadow-sm largeSecBtn mb-2 mb-sm-0 mb-md-2">Limpiar formulario</button>
+					</div>
+					<div class="form-group">
+						<small class="form-text text-muted">Las gift cards solo pueden ser utilizadas en <a class="link" href="index.html">homeresto.com.ar</a>. El beneficio no es acumulable con otras promociones. El pago será cobrado a la tarjeta al momento de la compra.<br>HomeRestó no es responsable por robos, extravíos o roturas de las gift cards. Tampoco es responsable por el uso de la gift card por parte de un destinatario diferente al deseado.</small>
+					</div>
+				</form>
+			</div>
+		</div>
+	</div>
+
+	<footer class="container-fluid text-center sectionGrey d-block d-sm-none d-lg-block px-0 py-3"> <!--FOOTER-->
+		<div class="row">
+			<div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-5 mb-sm-0" id="divLogoFooter">
+				<a href="index.html">
+					<img src="Imagenes/logo_footer.png" class="footer__logo" alt="Logo HomeRestó">
+				</a>
+			</div>
+			<div class="col-12 col-md-4 col-lg-3 d-sm-none d-md-block mb-5 mb-md-0">
+				<h6>Conocé más</h6>
+				<a href="planes.html">Planes</a><br>
+				<a href="menu.html">Menú</a><br>
+				<a href="#">Chefs HomeRestó</a><br>
+				<a href="como-funciona.html#Envíos & Pagos">Medios de pago</a><br>
+				<a href="como-funciona.html#Envíos & Pagos">Envíos</a><br>
+				<a href="regala.html">Regalá HomeRestó</a><br>
+				<a href="#">Preguntas frecuentes</a><br>
+			</div>
+			<div class="col-12 col-md-4 col-lg-3 d-sm-none d-md-block mb-5 mb-md-0">
+				<h6>HomeRestó</h6>
+				<a href="nosotros.html">Nosotros</a><br>
+				<a href="#">Contacto</a><br>
+				<a href="#">Sumate a nuestro equipo</a><br>
+				<a href="#">Prensa</a><br>
+				<a href="#">Términos y Condiciones</a><br>
+			</div>
+			<div class="col-12 col-sm-6 col-lg-3 d-md-none d-lg-block mb-sm-0">
+				<h6>Seguinos en</h6>
+				<a href="https://www.facebook.com/">
+					<img src="Imagenes/facebook.png" class="footer__icon" alt="Ícono Facebook">
+				</a>
+				<a href="https://www.instagram.com/">
+					<img src="Imagenes/instagram.png" class="footer__icon" alt="Ícono Instagram">
+				</a>
+				<a href="https://twitter.com/">
+					<img src="Imagenes/twitter.png" class="footer__icon" alt="Ícono Twitter">
+				</a>
+				<a href="https://ar.pinterest.com/">
+					<img src="Imagenes/pinterest.png" class="footer__icon" alt="Ícono Pinterest">
+				</a>
+				<a href="https://www.youtube.com/">
+					<img src="Imagenes/youtube.png" class="footer__icon" alt="Ícono Youtube">
+				</a><br><br>
+				<h6>Descargá la app</h6>
+				<a href="#">
+					<img src="Imagenes/android.png" class="footer__icon" alt="Ícono Android">
+				</a>
+				<a href="#">
+					<img src="Imagenes/apple.png" class="footer__icon" alt="Ícono Apple">
+				</a>
+			</div>
+		</div>
+	</footer>
+
+	<footer class="container-fluid text-center sectionGrey px-0 py-3" id="smallFooter">
+		<img src="Imagenes/logo_footer.png" class="footer__logo" alt="Logo HomeRestó">
+		<div>
+			<h6>Seguinos en</h6>
+			<a href="https://www.facebook.com/">
+				<img src="Imagenes/facebook.png" class="footer__icon" alt="Ícono Facebook">
+			</a>
+			<a href="https://www.instagram.com/">
+				<img src="Imagenes/instagram.png" class="footer__icon" alt="Ícono Instagram">
+			</a>
+			<a href="https://twitter.com/">
+				<img src="Imagenes/twitter.png" class="footer__icon" alt="Ícono Twitter">
+			</a>
+			<a href="https://ar.pinterest.com/">
+				<img src="Imagenes/pinterest.png" class="footer__icon" alt="Ícono Pinterest">
+			</a>
+			<a href="https://www.youtube.com/">
+				<img src="Imagenes/youtube.png" class="footer__icon" alt="Ícono Youtube">
+			</a><br><br>
+			<h6>Descargá la app</h6>
+			<a href="#">
+				<img src="Imagenes/android.png" class="footer__icon" alt="Ícono Android">
+			</a>
+			<a href="#">
+				<img src="Imagenes/apple.png" class="footer__icon" alt="Ícono Apple">
+			</a>
+		</div>
+	</footer>
+
+</body>
+</html>
