@@ -866,6 +866,9 @@ footer {
 		}
 	}
 	#cardsOpiniones {
+		.card {
+			transition: 0.15s;
+		}
 		.card:hover {
 			transform: scale(1.05)
 		}

@@ -648,6 +648,8 @@ footer {
       line-height: 2rem; }
     #cardsEquipo .container span {
       display: none; }
+  #cardsOpiniones .card {
+    transition: 0.15s; }
   #cardsOpiniones .card:hover {
     transform: scale(1.05); }
   #giftCard {
